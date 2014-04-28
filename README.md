@@ -62,18 +62,6 @@ In other words, every time you want to chain something, the same method structur
 
 Operators dictate the type of thing that you want to do: [ +: , o: , ?: , x: , #: , :: ]
 
-+ Render	meta(...)._('+:...', ...);
-
-o Obtain	meta(...)._('o:...', ...);
-
-? Has		meta(...)._('?:...', ...);
-
-x Remove	meta(...)._('x:...', ...);
-
-# Toggle	meta(...)._('#:...', ...);
-
-: Request	meta('http(s)://...', '!')._('::...', ...);
-
 The following wraapers are currently available in Meta:
 
 #### RENDER

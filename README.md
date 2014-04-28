@@ -70,8 +70,7 @@ x Remove	meta(...)._('x:...', ...);
 
 The following wraapers are currently available in Meta:
 
-# RENDER
-meta(...)._('+:...', ...);
+#### RENDER
 ``` js
 
 // EVENTS
@@ -103,8 +102,7 @@ meta('.element')._('+:attribute', 'type', 'value'); // Add Attribute
 
 ```
 
-# OBTAIN
-meta(...)._('o:...', ...);
+#### OBTAIN
 ``` js
 
 // BRANCHING
@@ -185,8 +183,7 @@ meta('.element')._('o:attribute', 'type'); // Obtain Attribute
 
 ```
 
-# HAS
-meta(...)._('?:...', ...);
+#### HAS
 ``` js
 
 // DOM NODES
@@ -235,8 +232,7 @@ meta('.element')._('?:attribute', 'type', 'optional_value'); // Has Attribute
 ```
 
 
-# REMOVE
-meta(...)._('x:...', ...);
+#### REMOVE
 ``` js
 
 // EVENTS
@@ -292,8 +288,7 @@ meta('.element')._('x:attribute', 'type');
 ```
 
 
-# TOGGLE
-meta(...)._('#:...', ...);
+#### TOGGLE
 ``` js
 
 // CLASSES
@@ -309,8 +304,7 @@ meta('.element')._('x:class', 'type', 'value');
 meta('.element')._('x:class', 'type', 'value');
 
 ```
-# REQUEST
-meta('http(s)://...', '!')._('::...', ...);
+#### REQUEST
 ``` js
 
 meta('http://someurl.com', '!')._('http:post', function(){...});

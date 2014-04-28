@@ -33,7 +33,7 @@ Opera Mobile 10+
 Android Browser 2.1+
 BlackBerry 7.0+
 
-### Context
+### CONTEXT
 
 ``` js
 // Each meta query can be optionally passed a context
@@ -45,7 +45,6 @@ You can optionally create elements like this:
 ``` js
 
 newDiv = meta('<div>'); // Create DIV
-
 ```
 
 ### NATIVE CODE
@@ -62,16 +61,16 @@ meta('.element')._(...)._(...);
 In other words, every time you want to chain something, the same method structure is used.
 
 Operators dictate the type of thing that you want to do: [ +: , o: , ?: , x: , #: , :: ]
- + Render	meta(...)._('+:...', ...);
- o Obtain	meta(...)._('o:...', ...);
- ? Has		meta(...)._('?:...', ...);
- x Remove	meta(...)._('x:...', ...);
- # Toggle	meta(...)._('#:...', ...);
- : Request	meta('http(s)://...', '!')._('::...', ...);
++ Render	meta(...)._('+:...', ...);
+o Obtain	meta(...)._('o:...', ...);
+? Has		meta(...)._('?:...', ...);
+x Remove	meta(...)._('x:...', ...);
+# Toggle	meta(...)._('#:...', ...);
+: Request	meta('http(s)://...', '!')._('::...', ...);
 
 The following wraapers are currently available in Meta:
 
-RENDER
+# RENDER
 meta(...)._('+:...', ...);
 ``` js
 
@@ -104,7 +103,8 @@ meta('.element')._('+:attribute', 'type', 'value'); // Add Attribute
 
 ```
 
-OBTAIN	meta(...)._('o:...', ...);
+# OBTAIN
+meta(...)._('o:...', ...);
 ``` js
 
 // BRANCHING
@@ -185,7 +185,7 @@ meta('.element')._('o:attribute', 'type'); // Obtain Attribute
 
 ```
 
-HAS
+# HAS
 meta(...)._('?:...', ...);
 ``` js
 
@@ -235,7 +235,7 @@ meta('.element')._('?:attribute', 'type', 'optional_value'); // Has Attribute
 ```
 
 
-REMOVE
+# REMOVE
 meta(...)._('x:...', ...);
 ``` js
 
@@ -292,7 +292,7 @@ meta('.element')._('x:attribute', 'type');
 ```
 
 
-TOGGLE
+# TOGGLE
 meta(...)._('#:...', ...);
 ``` js
 
@@ -309,7 +309,7 @@ meta('.element')._('x:class', 'type', 'value');
 meta('.element')._('x:class', 'type', 'value');
 
 ```
-REQUEST
+# REQUEST
 meta('http(s)://...', '!')._('::...', ...);
 ``` js
 

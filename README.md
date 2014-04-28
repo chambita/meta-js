@@ -293,15 +293,15 @@ meta('.element')._('x:attribute', 'type');
 
 // CLASSES
 // swap
-meta('.element')._('x:class', 'classnameA', 'classnameB');
+meta('.element')._('#:class', 'classnameA', 'classnameB');
 
 // STYLES
 // on/off
-meta('.element')._('x:class', 'type', 'value');
+meta('.element')._('#:class', 'type', 'value');
 
 // ATTRIBUTES
 // on/off
-meta('.element')._('x:class', 'type', 'value');
+meta('.element')._('#:class', 'type', 'value');
 
 ```
 #### REQUEST

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js no-ie">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <title>DEMO PAGE</title>
+        <meta name="description" content="Meta-JS: DEMO">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+
+        <!-- Stylesheets -->
+        <style type="text/css">
+            #body-content {
+                border: 10px solid #444444;
+            }
+        </style>
+        <!-- Scripts -->
+        <script type='text/javascript' src="meta.js"></script>
+    </head>
+    <body>
+        <!-- Add your site or application content here -->
+        <div id='view'>
+
+            <div id='body'>
+            <h1>DEMO</h1>h1>
+                <div id='body-content'>
+                    <div id='what' class='rat cc'>RAT</div>
+                    <div id='hat' class='rr bat'>BAT</div>
+                    <div id='wha' class='mat hat'>MAT</div>
+                    <div id='flat' class='bat cat'>CAT</div>
+                    <div id='swha' class='hat cc'>HAT</div>
+                    <div id='flatrr' class='bat tat'>TAT</div>
+                </div>
+            </div>
+
+        </div>
+        <script type="text/javascript">
+        $('#body-content')._('+:event', 'click', '.cc', function() {
+            $(this)._('o:branch', 'parent')._(function() { this.style['background'] = 'green'; });
+            this.style['background'] = 'blue';
+        });
+        </script>
+    </body>
+</html>
+
+
